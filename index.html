@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Белковая неделя на двоих</title>
+<meta name="description" content="Рацион на неделю на двоих: 100+ г белка, клетчатка, ПП-сладкое, общие списки закупок и учёт трат.">
+<meta name="theme-color" content="#2C5B43" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131813" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Рацион">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Onest:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css?v=ae935baa">
+</head>
+<body>
+<header class="towel">
+  <div class="wrap">
+    <div class="hero">
+      <p class="label">ПП-рацион · 7 дней · на двоих · ŠD 3, Банска-Бистрица</p>
+      <h1>Белковая неделя на двоих</h1>
+      <p class="lead" id="intro"></p>
+      <p class="hand">по 100+ г белка каждому, две закупки и немного сладкого</p>
+      <div class="facts" id="facts"></div>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Разделы">
+  <div class="wrap" id="tabs">
+    <a class="tab" href="#week" data-v="week">Неделя</a>
+    <a class="tab" href="#recipes" data-v="recipes">Рецепты</a>
+    <a class="tab" href="#sweets" data-v="sweets">Сладкое</a>
+    <a class="tab" href="#fiber" data-v="fiber">Клетчатка</a>
+    <a class="tab" href="#shop" data-v="shop">Закупки</a>
+    <a class="tab" href="#money" data-v="money">Траты</a>
+    <a class="tab" href="#prep" data-v="prep">Подготовка и хранение</a>
+  </div>
+</nav>
+
+<main class="wrap">
+  <section class="view" id="v-week" data-view="week"></section>
+  <section class="view" id="v-recipes" data-view="recipes" hidden></section>
+  <section class="view" id="v-sweets" data-view="sweets" hidden></section>
+  <section class="view" id="v-fiber" data-view="fiber" hidden></section>
+  <section class="view" id="v-shop" data-view="shop" hidden></section>
+  <section class="view" id="v-money" data-view="money" hidden></section>
+  <section class="view" id="v-prep" data-view="prep" hidden></section>
+</main>
+
+<footer>
+  <div class="wrap">Белок и калории считаются на одного человека по сырому весу продуктов. Цены ориентировочные, по сетям Lidl, Kaufland, Billa и Tesco в Банской Быстрице. Если одному из вас нужно меньше белка, уменьшайте только его порцию мяса, рыбы или творога.</div>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dlg-title"><div class="dlg" id="dlg-body"></div></dialog>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script src="data.js?v=ae935baa"></script>
+<script type="module" src="app.js?v=ae935baa"></script>
+</body>
+</html>
