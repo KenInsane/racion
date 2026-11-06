@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Onest:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap">
-<link rel="stylesheet" href="styles.css?v=aea585bb">
+<link rel="stylesheet" href="styles.css?v=cb5b219e">
 </head>
 <body>
 <header class="towel">
@@ -35,22 +35,24 @@
 <nav class="tabs" aria-label="Разделы">
   <div class="wrap" id="tabs">
     <a class="tab" href="#week" data-v="week">Неделя</a>
-    <a class="tab" href="#recipes" data-v="recipes">Рецепты</a>
-    <a class="tab" href="#sweets" data-v="sweets">Сладкое</a>
-    <a class="tab" href="#fiber" data-v="fiber">Клетчатка</a>
+    <a class="tab" href="#mine" data-v="mine">Мои рецепты</a>
+    <a class="tab" href="#ideas" data-v="ideas">Идеи</a>
     <a class="tab" href="#shop" data-v="shop">Закупки</a>
     <a class="tab" href="#money" data-v="money">Траты</a>
-    <a class="tab" href="#prep" data-v="prep">Подготовка и хранение</a>
+    <a class="tab" href="#sweets" data-v="sweets">Сладкое</a>
+    <a class="tab" href="#fiber" data-v="fiber">Клетчатка</a>
+    <a class="tab" href="#prep" data-v="prep">Хранение</a>
   </div>
 </nav>
 
 <main class="wrap">
   <section class="view" id="v-week" data-view="week"></section>
-  <section class="view" id="v-recipes" data-view="recipes" hidden></section>
-  <section class="view" id="v-sweets" data-view="sweets" hidden></section>
-  <section class="view" id="v-fiber" data-view="fiber" hidden></section>
+  <section class="view" id="v-mine" data-view="mine" hidden></section>
+  <section class="view" id="v-ideas" data-view="ideas" hidden></section>
   <section class="view" id="v-shop" data-view="shop" hidden></section>
   <section class="view" id="v-money" data-view="money" hidden></section>
+  <section class="view" id="v-sweets" data-view="sweets" hidden></section>
+  <section class="view" id="v-fiber" data-view="fiber" hidden></section>
   <section class="view" id="v-prep" data-view="prep" hidden></section>
 </main>
 
@@ -59,9 +61,10 @@
 </footer>
 
 <dialog id="dlg" aria-labelledby="dlg-title"><div class="dlg" id="dlg-body"></div></dialog>
+<dialog id="pick" aria-labelledby="pick-title"><div class="dlg" id="pick-body"></div></dialog>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data.js?v=aea585bb"></script>
-<script type="module" src="app.js?v=aea585bb"></script>
+<script src="data.js?v=cb5b219e"></script>
+<script type="module" src="app.js?v=cb5b219e"></script>
 </body>
 </html>

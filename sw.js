@@ -1,8 +1,8 @@
 // Офлайн-кэш: сайт открывается без сети (в магазине, в подвале общаги).
 // Свои файлы — сначала сеть (чтобы обновления доходили), при её отсутствии — кэш.
 // Шрифты и Firebase SDK с CDN — сначала кэш.
-const V = 'racion-aea585bb';
-const SHELL = ['./', './index.html', './styles.css?v=aea585bb', './data.js?v=aea585bb', './app.js?v=aea585bb', './firebase-config.js', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
+const V = 'racion-cb5b219e';
+const SHELL = ['./', './index.html', './styles.css?v=cb5b219e', './data.js?v=cb5b219e', './app.js?v=cb5b219e', './firebase-config.js', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(V).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
