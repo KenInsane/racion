@@ -352,7 +352,8 @@ function statusInfo() {
   if (S.status === 'connecting') return ['', 'Подключаюсь к общему списку…'];
   if (!navigator.onLine || S.status === 'offline') return ['off', 'Нет сети: всё сохраняется на телефоне и отправится само'];
   if (S.pending) return ['off', 'Отправляю изменения…'];
-  if (S.fromCache) return ['off', 'Жду ответа сервера…'];
+  // fromCache without pending writes: nothing is lost; another tab of this browser may hold the server stream
+  if (S.fromCache) return ['on', 'Общий список подключён'];
   return ['on', 'Общий список: всё сохранено'];
 }
 function paintStatus() {
